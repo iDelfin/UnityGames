@@ -24,27 +24,27 @@ public class SpawnItem : MonoBehaviour
     void Update()
     {
         RandomItem = Random.Range(0, 3);
-        CounterTime += 1 * Time.deltaTime;
+        CounterTime += 2 * Time.deltaTime;
         if ((CounterTime >= 3) && (RandomItem == 0))
         {
-            x = Random.Range(-2, 2);
-            y = Random.Range(-4.5f, 4.5f);
+            x = Random.Range(-1.2f, 3.0f);
+            y = Random.Range(-1.5f, 2.5f);
             NewPos = new Vector2(x, y);
             Instantiate(gearDrop, NewPos, transform.rotation);
             CounterTime = 0;
         }
         else if ((CounterTime >= 3) && (RandomItem == 1))
         {
-            x = Random.Range(-2, 2);
-            y = Random.Range(-4.5f, 4.5f);
+            x = Random.Range(-1.2f, 3.0f);
+            y = Random.Range(-1.5f, 2.5f);
             NewPos = new Vector2(x, y);
             Instantiate(springDrop, NewPos, transform.rotation);
             CounterTime = 0;
         }
         else if (CounterTime >= 3)
         {
-            x = Random.Range(-2, 2);
-            y = Random.Range(-4.5f, 4.5f);
+            x = Random.Range(-1.2f, 3.0f);
+            y = Random.Range(-1.5f, 2.5f);
             NewPos = new Vector2(x, y);
             Instantiate(screwDrop, NewPos, transform.rotation);
             CounterTime = 0;

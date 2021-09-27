@@ -9,6 +9,10 @@ TagManager:
   - NPC
   - Springs
   - Screws
+  - NPCFSD
+  - NPCLG
+  - NPCWeapons
+  - NPCTHR
   layers:
   - Default
   - TransparentFX
